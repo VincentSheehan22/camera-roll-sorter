@@ -34,7 +34,7 @@ for file in os.listdir(src):
 
         print(f"{file} moved.")
 
-    if '2020' in date_modified:
+    elif '2020' in date_modified:
         dst_file = os.path.join(dst_2020, file)
         shutil.move(src_file, dst_file)
 
